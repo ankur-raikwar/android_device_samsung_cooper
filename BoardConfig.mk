@@ -33,7 +33,7 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/cooper/recovery/recovery_ui.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/cooper/recovery/graphics.c
 TARGET_RECOVERY_INITRC := device/samsung/cooper/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/fstab.cooper
+TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/fstab.gt-s5830board
 RECOVERY_FSTAB_VERSION := 2
 
 SMALLER_FONT_FOOTPRINT := true
