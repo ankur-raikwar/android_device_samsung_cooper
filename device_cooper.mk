@@ -42,7 +42,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/cooper/overlay
 
 # Goo-Manager app
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=ankur \
+    ro.goo.developerid=ankur850 \
 	ro.goo.board=$(TARGET_PRODUCT) \
 	ro.goo.rom=cm10.2_$(TARGET_PRODUCT) \
 	ro.goo.version=1
