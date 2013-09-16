@@ -145,8 +145,6 @@ PRODUCT_PACKAGES += \
     fstab.msm7x27 \
     charging.rle \
     init.$(SAMSUNG_BOOTLOADER).rc \
-    init.$(SAMSUNG_BOOTLOADER).bluez.rc \
-    init.$(SAMSUNG_BOOTLOADER).parts.rc \
     init.$(SAMSUNG_BOOTLOADER).usb.rc \
     ueventd.$(SAMSUNG_BOOTLOADER).rc
 
