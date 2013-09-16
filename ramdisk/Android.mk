@@ -23,20 +23,6 @@ LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := init.$(SAMSUNG_BOOTLOADER).bluez.rc
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := etc/init.msm7x27.bluez.rc
-LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.$(SAMSUNG_BOOTLOADER).parts.rc
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := etc/init.msm7x27.parts.rc
-LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE       := init.$(SAMSUNG_BOOTLOADER).usb.rc
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/init.msm7x27.usb.rc
