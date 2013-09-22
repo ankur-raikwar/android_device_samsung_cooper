@@ -1,16 +1,12 @@
 # Extra apps
 app/Exchange2.apk
 app/Email2.apk
-app/DSPManager.apk
-app/Apollo.apk.apk
+app/LatinIME.apk
 
 # Video editor (5MB)
 app/VideoEditor.apk
 lib/libvideoeditor_jni.so
 lib/libvideoeditorplayer.so
-
-# RomManager (2.5MB)
-app/RomManager.apk
 
 # CM Wallpapers (7MB)
 app/CMWallpapers.apk
