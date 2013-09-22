@@ -135,11 +135,54 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/cooper/prebuilt/etc/gps.conf:system/etc/gps.conf
 
+# BEGIN: Misc properties
+## Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.checkjni=0 \
+    dalvik.vm.debug.alloc=0 \
+    dalvik.vm.dexopt-data-only=1 \
+    dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
+
+## Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.composition.type=mdp \
+    debug.sf.no_hw_vsync=0
+
 ## Loop ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.call_ring.multiple=false \
-    ro.telephony.call_ring.delay=3000
+    ro.telephony.call_ring.delay=3000 \
+    ro.telephony.call_ring.multiple=false
 
+## Other
+PRODUCT_PROPERTY_OVERRIDES += \
+    DEVICE_PROVISIONED=1 \
+    dev.sfbootcomplete=0 \
+    ro.config.play.bootsound=0 \
+    ro.setupwizard.enable_bypass=1
+
+## RIL, telephony
+PRODUCT_PROPERTY_OVERRIDES += \
+    mobiledata.interfaces=pdp0,gprs,ppp0 \
+    rild.libargs=-d/dev/smd0 \
+    rild.libpath=/system/lib/libsec-ril.so \
+    ro.telephony.default_network=0 \
+    ro.telephony.ril_class=SamsungMSMRIL
+
+## USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.adb.enable=1 \
+    persist.sys.usb.config=mass_storage,adb
+
+## WiFi
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.ap.interface=athap0 \
+    wifi.interface=wlan0 \
+    wifi.supplicant_scan_interval=180
+
+## Vold/fstab
+PRODUCT_COPY_FILES += \
+   device/samsung/cooper/prebuilt/etc/vold.fstab:system/etc/vold.fstab
+   
 ## Ramdisk
 ## SAMSUNG_BOOTLOADER is the product model changed into appropriate string parsed by init.
 ## Example: -GT-I5500 becomes gt-i5500board, -GT-S5830 becomes gt-s5830board, and so on.
