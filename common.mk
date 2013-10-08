@@ -178,10 +178,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.ap.interface=athap0 \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=180
-
-## Vold/fstab
-PRODUCT_COPY_FILES += \
-   device/samsung/cooper/prebuilt/etc/vold.fstab:system/etc/vold.fstab
    
 ## Ramdisk
 ## SAMSUNG_BOOTLOADER is the product model changed into appropriate string parsed by init.
