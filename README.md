@@ -1,2 +1,2 @@
-android_device_samsung_cooper
+Galaxy Ace - CyanogenMod 10.2
 =============================
